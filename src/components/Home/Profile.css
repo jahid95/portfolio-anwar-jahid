@@ -1,0 +1,147 @@
+.profile-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    background-image: url(../../assets/Home/bg.jpg);
+}
+
+.profile-parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.profile-details-name{
+    font-size: 24px;
+    font-family: "Poppins Semibold";
+}
+
+.profile-details-role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.primary-text{
+    color: (--white);
+}
+
+.highlighted-text{
+    color: var(--dark-orange);
+}
+
+.profile-role-tagline{
+    font-size: 24px;
+}
+
+.profile-options{
+    margin: 0 0 0 28px;
+    
+    
+}
+
+.profile-options:hover{
+    margin: 0 0 0 28px;    
+    color: #111;
+    font-size: 24px;
+}
+
+.profile-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 0px 0px var(--white);
+    border-radius: 50%;
+    margin: 0 0px 0px 100px;
+    height: 380px;
+    width: 380px;
+}
+
+.profile-background{
+    width: 92%;
+    height: 92%;
+    background-image: url(../../assets/Home/anwar_jahid__2_-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+
+.colz a i{
+    color: white;
+    padding: 14px;
+    padding-left: 0px;
+    font-size: 30px;
+}
+
+.colz a i:hover{
+    transform: scale(1.30);
+}
+
+.hire-me{
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1110px) {
+    .profile-picture{
+        margin: 0 0px 0 80px;
+    }
+    .profile-details-name{
+        font-size: 20px;
+    }
+
+    .profile-options .btn{
+        width: 120px;
+        padding: 11px 0px;
+        z-index: 700;
+    }
+    
+}
+
+@media screen and (max-width: 910px) {
+    .profile-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+
+    .profile-options{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-details{
+        margin: 25px 0 0;
+    }
+
+    .profile-options .highlighted-btn{
+        margin: 0 !important;
+    }
+
+    .profile-options, .profile-details-role{
+        text-align: center;
+    }
+}
